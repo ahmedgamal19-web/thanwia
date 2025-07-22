@@ -9,7 +9,7 @@ st.set_page_config(page_title="تحليل درجات الطلاب", layout="wide
 # ---------- تحميل البيانات ----------
 @st.cache_data
 def load_data():
-    df = pd.read_excel(r"C:\Users\King\Downloads\نتيجة الثانوية العامة 2025.xlsx")  # ← غيّر المسار حسب اسم الملف
+    df = pd.read_excel(r"thanwia_data.xlsx")  # ← غيّر المسار حسب اسم الملف
     return df
 
 df = load_data()
